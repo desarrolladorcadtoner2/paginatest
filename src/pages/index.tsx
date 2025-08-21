@@ -1,30 +1,16 @@
 import React from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
+
 
 export default function Home() {
   return (
-    <>
-      <header className=" py-6">
-        <div className="max-w-screen-lg  mx-auto flex justify-between items-center">
-          <div className="text-2xl font-bold text-gray-800 ml-6">
-            <h1>HOLA MUNDO</h1>
-          </div>
+    <><Header/>
 
 
 
-          <nav>
-            <table className="w-xs flex-row-reverse border-separate border-spacing-4">
-              <tbody>
-                <tr>
-                  <td><a href="#" className="text-black-800   ">INICIO</a></td>
-                  <td><a href="#" className="text-black-800   ">PRODUCTOS</a></td>
-                  <td><a href="#" className="text-black-800   ">CONTACTO</a></td>
-                  <td> <button className="bg-black text-white p-2 rounded-lg">Buscar</button></td>
-                </tr>
-              </tbody>
-            </table>
-          </nav>
-        </div>
-      </header>
+
 
       <div className="bg-white">
         <main className="py-10 px-4  sm:px-6 lg:px-8 ">
@@ -135,24 +121,55 @@ export default function Home() {
         </div>
 
       </div>
-
-
-
-
-
-
-
-      <footer className="bg-blue-600 text-white py-20 mt-auto">
-        <div className="max-w-7xl mx-auto text-center">
-          <p>© 2025 Equipos y Superficies de México</p>
-          <div className="mt-4">
-            <a href="https://wa.me/yourphonenumber" target="_blank" className="flex justify-center items-center">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="w-6 mr-2 " />
-              WhatsApp San Luis Potosí
-            </a>
+      <br />
+      <br />
+      <div className="max-w-7xl mx-auto p-4">
+        <h1 className="text-2xl font-bold">COMENTARIOS</h1>
+        <div className="flex max-w-7xl mx-auto gap-8 mt-10">
+          <div className="max-w-sm mx-auto  bg-white shadow-xl rounded-lg overflow-hidde p-6">
+            <p className="text-lg mt-6 font-semibold text-gray-800">"BUENA iNFORMACION"</p>
+            <div className="flex items-center mt-4">
+              <img className="w-10 h-10 rounded-full" src="https://cdn.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_1280.jpg" alt="maria" />
+              <div className="ml-3">
+                <p className="text-sm font-medium text-gray-800">Maria99</p>
+                <p className="text-xs text-gray-500">Investiagdora</p>
+              </div>
+            </div>
+          </div>
+          <div className="max-w-sm mx-auto  bg-white shadow-xl rounded-lg overflow-hidde p-6">
+            <p className="text-lg mt-6 font-semibold text-gray-800">"BUENA iNFORMACION"</p>
+            <div className="flex items-center mt-4">
+              <img className="w-10 h-10 rounded-full" src="https://cdn.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_1280.jpg" alt="maria" />
+              <div className="ml-3">
+                <p className="text-sm font-medium text-gray-800">Maria99</p>
+                <p className="text-xs text-gray-500">Investiagdora</p>
+              </div>
+            </div>
+          </div>
+          <div className="max-w-sm mx-auto bg-white shadow-xl rounded-lg overflow-hidde p-6">
+            <p className="text-lg mt-6 font-semibold text-gray-800">"BUENA iNFORMACION"</p>
+            <div className="flex items-center mt-4">
+              <img className="w-10 h-10 rounded-full" src="https://cdn.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_1280.jpg" alt="maria" />
+              <div className="ml-3">
+                <p className="text-sm font-medium text-gray-800">Maria99</p>
+                <p className="text-xs text-gray-500">Investiagdora</p>
+              </div>
+            </div>
           </div>
         </div>
-      </footer>
+      </div>
+      <br />
+      <br />
+      <div className="bg-gray-200 flex justify-between items-center w-full max-w-7xl mx-auto p-4">
+        <h1 className="text-2xl font-bold">chatGPT</h1>
+        <div className="flex gap-6">
+          <button className="bg-black text-white py-2 px-6 rounded-full hover:bg-gray-800">IR A CHAT</button>
+          <button className="bg-gray-400 text-black py-2 px-6 rounded-full hover:bg-gray-600">INFORMACION</button>
+        </div>
+      </div>
+      <Footer/>
     </>
   );
 }
+
+
